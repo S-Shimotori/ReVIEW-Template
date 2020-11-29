@@ -1,3 +1,18 @@
+TechBoosterさんのReVIEW-Templateに以下の手を加えたものです
+
+ * 出力される名前をわたしに変更
+ * レイアウトをちょっと変更
+ * Bazel対応
+
+```sh
+# 日光企画さん対応版PDF
+bazel build :pdf
+# 電子版PDF
+bazel build :pdf-ebook
+```
+
+以上
+
 # Re:VIEW Template
 
 このリポジトリはRe:VIEW用の書籍テンプレートです。Re:VIEWバージョン4.1に対応します。
