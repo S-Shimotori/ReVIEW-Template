@@ -1,4 +1,4 @@
 = 著者紹介
 
-==== 第1章 ひつじ / @mhidaka
-ひつじだよ〜
+==== S_Shimotori / @S_Shimotori_pub
+しもとりだよ〜
