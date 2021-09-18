@@ -7,6 +7,6 @@ bazel-*
 articles/*.pdf
 articles/*.epub
 articles/*.html
-articles/*.md
+# articles/*.md
 articles/*.xml
 articles/*.txt
