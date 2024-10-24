@@ -15,7 +15,7 @@ bazel build :pdf-ebook
 
 # Re:VIEW Template
 
-このリポジトリはRe:VIEW用の書籍テンプレートです。Re:VIEWバージョン5.1に対応します。
+このリポジトリはRe:VIEW用の書籍テンプレートです。Re:VIEWバージョン5.8に対応します。
 メンテナンスはTechBoosterが行っています。
 
  * [B5紙面サンプル（PDF）](https://github.com/TechBooster/ReVIEW-Template/tree/master/pdf-sample/TechBooster-Template-B5.pdf)
@@ -146,11 +146,12 @@ $ review-textmaker config.yml
 
 ## Dockerを使う
 
-TeXの環境構築が困難な場合、一式セットアップ済みの[dockerイメージ](https://registry.hub.docker.com/u/vvakame/review/)を用意してあるので使ってください。
+TeXの環境構築が困難な場合、一式セットアップ済みのDockerイメージを [ghcr.io](https://github.com/vvakame/docker-review/pkgs/container/review) または [DockerHub](https://hub.docker.com/r/vvakame/review) に用意してあるので使ってください。
 Dockerがうまく動くようになっている場合、以下のコマンドで細かい準備なしにビルドを行うことができます。
 
 ```
-$ docker pull vvakame/review:5.1
+$ docker pull ghcr.io/vvakame/review:5.8 (ghcrからのダウンロードの場合)
+$ docker pull vvakame/review:5.8 (Docker Hubからのダウンロードの場合)
 $ ./build-in-docker.sh
 ```
 
@@ -244,10 +245,10 @@ Re:VIEW 3以降のプロジェクトは、review-updateコマンドで簡単に�
 
 ```
 $ review-update
-** review-update はプロジェクトを 5.1.1 に更新します **
+** review-update はプロジェクトを 5.8.0 に更新します **
 config.yml: 'review_version' を '5.0' に更新しますか? [y]/n
-プロジェクト/sty/review-base.sty は Re:VIEW バージョンのもの (/var/lib/gems/2.5.0/gems/review-5.1.1/templates/latex/review-jsbook/review-base.sty) で置き換えられます。本当に進めますか? [y]/n
-プロジェクト/sty/review-jsbook.cls は Re:VIEW バージョンのもの (/var/lib/gems/2.5.0/gems/review-5.1.1/templates/latex/review-jsbook/review-jsbook.cls) で置き換えられます。本当に進めますか? [y]/n
+プロジェクト/sty/review-base.sty は Re:VIEW バージョンのもの (/var/lib/gems/2.7.0/gems/review-5.8.0/templates/latex/review-jsbook/review-base.sty) で置き換えられます。本当に進めますか? [y]/n
+プロジェクト/sty/review-jsbook.cls は Re:VIEW バージョンのもの (/var/lib/gems/2.7.0/gems/review-5.8.0/templates/latex/review-jsbook/review-jsbook.cls) で置き換えられます。本当に進めますか? [y]/n
 完了しました。
 ```
 
@@ -292,10 +293,17 @@ layouts/layouts.tex.erbやsty/techbooster-doujin.styに何らかのカスタマ�
 
 Re:VIEW 3以降で変わったことの詳細については、以下を参照してください。
 
+* [Re:VIEW 5.8 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review580.html)
+* [Re:VIEW 5.7 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review570.html)
+* [Re:VIEW 5.6 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review560.html)
+* [Re:VIEW 5.5 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review550.html)
+* [Re:VIEW 5.4 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review540.html)
+* [Re:VIEW 5.3 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review530.html)
+* [Re:VIEW 5.2 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review520.html)
 * [Re:VIEW 5.1 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review510.html)
 * [Re:VIEW 5.0 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review500.html)
-* [Re:VIEW 4.2 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review410.html)
-* [Re:VIEW 4.2 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review410.html)
+* [Re:VIEW 4.2 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review420.html)
+* [Re:VIEW 4.1 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review410.html)
 * [Re:VIEW 4.0 での変更点](https://review-knowledge-ja.readthedocs.io/ja/latest/releases/review400.html)
 * [Re:VIEW 3からのLaTeX処理](https://review-knowledge-ja.readthedocs.io/ja/latest/latex/review3-latex.html)
 
